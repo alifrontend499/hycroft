@@ -8,6 +8,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<header></header>
 
 	<div class="table-responsive">
+		<?php
+
+			// echo "<pre>";
+			// print_r($users);
+		?>
 		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
@@ -17,11 +22,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Ali</td>
-					<td>He is a front end developer. and currently working in MYL (Making You Live). he has 2+ years of experience. he has good knowledge of HTML, CSS, JS, PHP, SQL and some other web related techs. his previous company was Multichannelcreative. its is an UK base company.</td>
-				</tr>
+				<?php foreach ($users as $key => $user) { ?>
+					<tr>
+						<td><?php echo $user['id'] ?></td>
+						<td><?php echo $user['name'] ?></td>
+						<td><?php echo $user['description'] ?></td>
+					</tr>
+				<?php } ?>
 			</tbody>
 		</table>
 	</div>
