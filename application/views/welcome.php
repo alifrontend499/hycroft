@@ -10,6 +10,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Hycroft</title>
 </head>
 <body>
+
+	<table>
+		
+	</table>
 	
 </body>
 </html>

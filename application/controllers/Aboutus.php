@@ -5,7 +5,6 @@ class Aboutus extends CI_Controller {
 
 	public function index()
 	{
-		echo "<style> body { font-family: calibri; } </style>";
-		echo "<h1>About us</h1>";
+		echo base_url();
 	}
 }
